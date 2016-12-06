@@ -14,7 +14,6 @@ class PostsController < ApplicationController
   end
 
   def create
-
     @topic = Topic.find(params[:topic_id])
     @post = @topic.posts.build(post_params)
     @post.user = current_user
@@ -50,7 +49,6 @@ class PostsController < ApplicationController
 
   def destroy
     @post = Post.find(params[:id])
-
 
     if @post.destroy
       flash[:notice] = "\"#{@post.title}\" was deleted successfully."

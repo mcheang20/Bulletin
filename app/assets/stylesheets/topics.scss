@@ -1,3 +1,24 @@
 // Place all the styles related to the Topics controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.topics-index {
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 0 5px rgba(1,1,1,.5);
+}
+
+.topic-desc {
+  background-color: white;
+  padding: 10px;
+  background-color: white;
+  padding-top: 0;
+  font-size: 16px;
+  box-shadow: 0 0 5px;
+}
+
+.posts-all {
+  background-color: white;
+  padding: 10px;
+  margin-top: 10px;
+  box-shadow: 0 0 5px;
+}

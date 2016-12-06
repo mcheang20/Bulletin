@@ -16,10 +16,33 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body {
+  background-color: rgba(1,1,1,.1);
+}
+
 .user-info {
    margin-top: 9px;
+
+   img {
+     height: 35px;
+     width: 35px;
+   }
  }
 
  .nav {
    margin-top: 5px;
+ }
+
+ .navbar {
+   border-bottom: 1px solid rgba(1,1,1,.3);
+
+    a {
+      font-size: 16px;
+      color: rgba(1,1,1,.5);
+    }
+ }
+
+ .title-all {
+   color: rgba(1,1,1,.5);
+   font-weight: 200;
  }

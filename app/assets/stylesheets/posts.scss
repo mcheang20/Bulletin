@@ -1,3 +1,37 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.posts-top {
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 0 5px;
+}
+
+.comments-section {
+  background-color: white;
+  padding: 10px;
+  box-shadow: 0 0 5px;
+  margin-top: 15px;
+}
+
+.posts-favorite {
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 0 5px;
+  margin-top: 15px;
+}
+
+.user-edit {
+  position: absolute;
+  margin-top: -80px;
+  margin-left: 970px;
+}
+
+.posts-form {
+
+  label {
+    color: white;
+    font-size: 16px;
+    font-weight: 200;
+  }
+}
