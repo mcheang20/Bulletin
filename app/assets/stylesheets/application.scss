@@ -21,11 +21,12 @@ body {
 }
 
 .user-info {
-   margin-top: 9px;
+   margin-top: 1px;
 
    img {
      height: 35px;
      width: 35px;
+     margin-top: 7px;
    }
  }
 
@@ -34,15 +35,44 @@ body {
  }
 
  .navbar {
-   border-bottom: 1px solid rgba(1,1,1,.3);
+   background-color: rgba(1, 1, 1, 0.4);
+   margin-top: 0px;
+   width: 1440px;
+   margin-left: -150px;
+   padding-right: 20px;
+   border-radius: 0px;
 
     a {
       font-size: 16px;
-      color: rgba(1,1,1,.5);
+      color: white;
     }
  }
 
  .title-all {
-   color: rgba(1,1,1,.5);
+   color: white;
    font-weight: 200;
+   background-color: brown;
+   padding: 6px;
+   padding-left: 16px;
+   margin-bottom: 0px;
+   width: 1172px;
+   margin-left: -16px;
+}
+
+ .jumbotron {
+   background-color: rgba(255,255,255,.6);
+   margin-top: -5px;
+   box-shadow: 0 0 5px;
+ }
+
+ .home-img {
+
+   img {
+    position: absolute;
+    z-index: -10;
+    margin-top: -72px;
+    margin-left: -150px;
+    width: 1440px;
+    height: 700px;
+   }
  }

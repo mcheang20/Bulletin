@@ -5,6 +5,15 @@
   background-color: white;
   padding: 10px;
   box-shadow: 0 0 5px;
+
+    h1 {
+      color: rgba(1,1,1,.6);
+      font-weight: 200;
+    }
+
+    small {
+      padding-left: 40px;
+    }
 }
 
 .comments-section {
@@ -12,6 +21,12 @@
   padding: 10px;
   box-shadow: 0 0 5px;
   margin-top: 15px;
+
+    h3 {
+      font-size: 26px;
+      color: rgba(1,1,1,.6);
+      font-weight: 200;
+    }
 }
 
 .posts-favorite {
@@ -29,9 +44,15 @@
 
 .posts-form {
 
+  margin-top: 10px;
+
   label {
-    color: white;
+    color: rgba(1,1,1,.6);
     font-size: 16px;
     font-weight: 200;
   }
+}
+
+.submit-comment {
+  margin-top: -46px;
 }
