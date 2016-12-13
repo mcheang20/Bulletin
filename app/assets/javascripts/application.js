@@ -15,3 +15,9 @@
 //= require turbolinks
  //= require bootstrap
 //= require_tree .
+
+$(document).ready(function){
+  $('.welcome-heading').hover(function){
+    $(this).animateCss('bounce');
+  });
+});

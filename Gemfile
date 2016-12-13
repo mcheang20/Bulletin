@@ -38,3 +38,5 @@ source 'https://rubygems.org'
  gem 'bcrypt'
 
  gem 'figaro', '1.0'
+
+ gem "animate-rails"
