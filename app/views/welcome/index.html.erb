@@ -2,25 +2,29 @@
   <img src="http://previews.123rf.com/images/stephaniefrey/stephaniefrey0905/stephaniefrey090500099/4944849-Macro-of-blank-cork-message-board--Stock-Photo-bulletin.jpg">
 </div>
 <div class="jumbotron">
-   <h1 class="welcome-heading">Welcome to Bulletin</h1>
+   <h1 class="welcome-heading">Bulletin</h1>
    <p>Bulletin is a resource for disuccsing topics and sharing links with your friends!</p>
    <p>
-     <%= link_to "Sign In", new_session_path %> or
-     <%= link_to "Sign Up", new_user_path, class: 'btn btn-primary' %> today!
+     <% if current_user %>
+        <%= link_to "Learn More", about_path, class: 'btn btn-primary' %>
+     <% else %>
+       <%= link_to "Sign In", new_session_path %> or
+       <%= link_to "Sign Up", new_user_path, class: 'btn btn-primary' %> today!
+     <% end %>
    </p>
  </div>
 
  <div class="row">
    <div class="home-data col-md-4">
-     <h2>Solves world hunger</h2>
-     <p>Bloccit will deliver food and water to those in need, all over the world.</p>
+     <h2>Discuss</h2>
+     <p>Discuss latest topics, news, or projects with friends and others.</p>
    </div>
    <div class="home-data col-md-4">
-     <h2>Eliminates poverty</h2>
-     <p>Bloccit will deliver money and education to those in need, all over the world.</p>
+     <h2>Share Links</h2>
+     <p>Share your favorite links and see what others have to say about it. </p>
    </div>
    <div class="home-data col-md-4">
-     <h2>Makes you better looking</h2>
-     <p>Bloccit will make you better looking: it's scientifically proven to make men look like Ryan Gosling and women look like Shakira.</p>
+     <h2>Easy to Use</h2>
+     <p>Once you make an account your ready to share, like, and discuss with everyone all over the world.</p>
    </div>
  </div>
