@@ -1,34 +1,24 @@
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
 ## Bulletin: A topics discussion and sharing application.  
 
 Built to teach and learn the fundamentals of Ruby and Ruby on Rails.
+Rails version 4.2.5
 
 ## Setup
 
-Clone the repo and run 'rails s' to install dependencies.
+
+For setup:
+```
+git clone https://github.com/mcheang20/bulletin.git
+cd bulletin
+rails s
+```
+
+Database initialization and creation:
+```
+rake db:create
+rake db:migrate
+```
 
 ## Contributors
 
  Made with my mentor at [Bloc](http://bloc.io).
-
- 
