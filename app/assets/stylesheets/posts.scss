@@ -34,6 +34,7 @@
   background-color: white;
   box-shadow: 0 0 5px;
   margin-top: 15px;
+  margin-bottom: 50px;
 }
 
 .user-edit {
@@ -47,12 +48,17 @@
   margin-top: 10px;
 
   label {
-    color: rgba(1,1,1,.6);
-    font-size: 16px;
-    font-weight: 200;
+    font-size: 24px;
+    font-weight: 500;
   }
 }
 
 .submit-comment {
   margin-top: -46px;
+}
+
+.guidelines {
+  background-color: #ffe349;;
+  margin-top: 35px;
+  padding: 50px;
 }

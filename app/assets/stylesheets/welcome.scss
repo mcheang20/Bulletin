@@ -1,3 +1,37 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.head-one {
+  background-color: white;
+  padding: 50px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px;
+
+    h1 {
+      font-size: 55px;
+      font-weight: 200;
+    }
+
+    p {
+      font-size: 25px;
+      font-weight: 200;
+    }
+}
+
+.content {
+  div {
+    border-radius: 5px;
+    box-shadow: 0 0 5px;
+  }
+
+  div:nth-child(1) {
+    background-color: #ffe349;
+  }
+
+  div:nth-child(2) {
+    background-color: #ef17d6;
+  }
+  div:nth-child(3) {
+    background-color: #0ef28f;
+  }
+}

@@ -4,12 +4,11 @@
 .topics-index {
   background-color: white;
   padding: 10px;
-  box-shadow: 0 0 5px rgba(1,1,1,.5);
 }
 
 .topic-desc {
   padding: 10px;
-  background-color: white;
+  background-color: #ffe349;
   padding-top: 0;
   font-size: 16px;
   box-shadow: 0 0 5px;
@@ -32,10 +31,10 @@
   padding: 10px;
   margin-top: 10px;
   box-shadow: 0 0 5px;
+  margin-bottom: 40px;
 
     h2 {
-      font-size: 26px;
-      color: rgba(1,1,1,.6);
+      font-size: 36px;
       font-weight: 200;
     }
 }
