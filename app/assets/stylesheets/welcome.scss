@@ -2,36 +2,69 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .head-one {
-  background-color: white;
-  padding: 50px;
-  border-radius: 5px;
-  box-shadow: 0 0 10px;
-
     h1 {
       font-size: 55px;
       font-weight: 200;
     }
 
     p {
-      font-size: 25px;
+      font-size: 30px;
       font-weight: 200;
+      position: absolute;
+      transform: rotate(-6deg);
+      margin-top: -200px;
+      margin-left: 225px;
+    }
+
+    .btn {
+      border: 3px solid white;
+      border-radius: 10px;
+        &:hover {
+          background-color: white;
+        }
+    }
+
+    a {
+      font-size: 25px;
+      color: chocolate;
     }
 }
 
+.home-logo {
+  img {
+    margin-top: -100px;
+    margin-left: 25px;
+  }
+}
 .content {
-  div {
-    border-radius: 5px;
-    box-shadow: 0 0 5px;
+  img {
+    position: absolute;
+    height: 325px;
+    margin-left: 8px;
   }
+}
 
-  div:nth-child(1) {
-    background-color: #ffe349;
-  }
 
-  div:nth-child(2) {
-    background-color: #ef17d6;
-  }
-  div:nth-child(3) {
-    background-color: #0ef28f;
-  }
+.home-data {
+    h2 {
+      font-weight: 200;
+      font-size: 36px;
+      position: absolute;
+      z-index: 100;
+      margin-top: 75px;
+      margin-left: 45px;
+    }
+
+    p {
+      font-size: 19px;
+      position: absolute;
+      z-index: 100;
+      margin-top: 115px;
+      width: 200px;
+      margin-left: 25px;
+    }
+}
+
+.text {
+  text-align: center;
 }
