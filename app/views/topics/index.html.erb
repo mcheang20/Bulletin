@@ -1,11 +1,10 @@
-<h1 class="title-all">Topics</h1>
+<h1 class="title-all">Bulletin Topics</h1>
 <div class="row topics-index">
   <div class="col-md-8">
     <% @topics.each do |topic| %>
       <div class="media">
         <div class="media-body">
           <h4 class="media-heading">
-
             <%= link_to topic.name, topic %>
           </h4>
           <small>

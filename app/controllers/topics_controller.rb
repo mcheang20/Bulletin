@@ -64,14 +64,14 @@ class TopicsController < ApplicationController
      end
    end
 
-   private
+  private
 
   def topic_params
     params.require(:topic).permit(:name, :description, :public)
   end
 
   def authorize_user
-    unless current_user.admin?
+    unless current_user || current_user.admin?
       flash[:alert] = "You must be an admin to do that."
       redirect_to topics_path
     end

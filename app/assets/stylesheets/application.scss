@@ -17,10 +17,6 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
-body {
-  background-image: url("http://previews.123rf.com/images/stephaniefrey/stephaniefrey0905/stephaniefrey090500099/4944849-Macro-of-blank-cork-message-board--Stock-Photo-bulletin.jpg");
-}
-
 .user-info {
    margin-top: 1px;
 
@@ -36,7 +32,7 @@ body {
  }
 
  .navbar {
-   background-color: rgba(1, 1, 1, 0.4);
+   background-color: rgba(1,1,1,.6);
    margin-top: 0px;
    width: 1440px;
    margin-left: -150px;
@@ -47,36 +43,27 @@ body {
       font-size: 16px;
       color: white;
     }
+
+    img {
+      height: 35px;
+    }
  }
 
  .title-all {
    color: white;
    font-weight: 200;
-   background-color: #0ef28f;
+   background-color: rgb(42, 109, 161);
    padding: 6px;
    padding-left: 16px;
-   margin-bottom: 0px;
-   width: 1172px;
-   margin-left: -16px;
+   margin-left: -145px;
+   margin-top: -20px;
+   width: 1435px;
 }
 
  .jumbotron {
    background-color: rgba(255,255,255,.4);
    margin-top: -5px;
    box-shadow: 0 0 5px;
- }
-
- .home-img {
-
-   img {
-    position: absolute;
-    z-index: -10;
-    margin-top: -72px;
-    margin-left: -150px;
-    width: 1440px;
-    height: 750px;
-
-   }
  }
 
 .user-session{

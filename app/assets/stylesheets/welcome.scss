@@ -30,21 +30,6 @@
     }
 }
 
-.home-logo {
-  img {
-    margin-top: -100px;
-    margin-left: 25px;
-  }
-}
-.content {
-  img {
-    position: absolute;
-    height: 325px;
-    margin-left: 8px;
-  }
-}
-
-
 .home-data {
     h2 {
       font-weight: 200;
@@ -67,4 +52,33 @@
 
 .text {
   text-align: center;
+}
+
+.home-img {
+
+  img {
+   position: absolute;
+   z-index: -10;
+   margin-top: -192px;
+   margin-left: -150px;
+   width: 1440px;
+   height: 750px;
+  }
+
+  h1 {
+    padding-top: 150px;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+  }
+
+  h5 {
+    color: white;
+    text-align: center;
+    font-size: 17px;
+  }
+
+  p {
+    text-align: center;
+  }
 }

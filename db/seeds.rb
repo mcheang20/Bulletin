@@ -49,7 +49,6 @@ require 'random_data'
     role:     'admin'
   )
 
-
   member = User.create!(
     name:     'Member User',
     email:    'member@example.com',
