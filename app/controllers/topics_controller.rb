@@ -2,10 +2,10 @@ class TopicsController < ApplicationController
 
   before_action :require_sign_in, except: [:index, :show]
 
-   before_action :authorize_user, except: [:index, :show]
+  before_action :authorize_user, except: [:index, :show]
 
   def index
-    @topics = Topic.visible_to(current_user)
+    @topics = Topic.all
   end
 
   def show
@@ -23,6 +23,7 @@ class TopicsController < ApplicationController
 
   def create
      @topic = Topic.new(topic_params)
+     @topic.user = current_user
 
     if @topic.save
       @topic.labels = Label.update_labels(params[:topic][:labels])
