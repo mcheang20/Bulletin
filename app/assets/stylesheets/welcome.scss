@@ -1,35 +1,6 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
-.head-one {
-    h1 {
-      font-size: 55px;
-      font-weight: 200;
-    }
-
-    p {
-      font-size: 30px;
-      font-weight: 200;
-      position: absolute;
-      transform: rotate(-6deg);
-      margin-top: -200px;
-      margin-left: 225px;
-    }
-
-    .btn {
-      border: 3px solid white;
-      border-radius: 10px;
-        &:hover {
-          background-color: white;
-        }
-    }
-
-    a {
-      font-size: 25px;
-      color: chocolate;
-    }
-}
-
 .home-data {
     h2 {
       font-weight: 200;
@@ -60,25 +31,29 @@
    position: absolute;
    z-index: -10;
    margin-top: -192px;
-   width: 1440px;
-   height: 750px;
+   margin-left: -150px;
   }
 
   h1 {
     padding-top: 150px;
     color: white;
     text-align: center;
-    font-size: 50px;
+    font-size: 55px;
   }
 
   h5 {
     color: white;
     text-align: center;
-    font-size: 17px;
+    font-size: 18px;
+    font-weight: 400;
   }
 
   p {
     text-align: center;
+      a {
+        font-size: 18px;
+        width: 180px;
+      }
   }
 }
 
@@ -93,7 +68,7 @@
     }
 
     p {
-      font-size: 20px;
+      font-size: 18px;
       font-weight: 200;
       color: grey;
     }

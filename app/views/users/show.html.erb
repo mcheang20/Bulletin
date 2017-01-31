@@ -5,17 +5,15 @@
       <%= image_tag avatar_url %>
     </div>
   <% end %>
-  <div class="user-info">
+  <div class="user-top">
     <h2><%= @user.name %></h2>
-      <%= pluralize(@user.posts.count, 'post') %>,
-      <%= pluralize(@user.comments.count, 'comment') %>
+    <p><%= pluralize(@user.posts.count, 'post') %></p>
+    <p><%= pluralize(@user.comments.count, 'comment') %></p>
   </div>
 </div>
-<div class="user-content">
+<div class="container user-content">
  <h2>Posts</h2>
  <%= render @user.posts %>
-</div>
-<div class="user-content">
  <h2>Comments</h2>
  <%= render @user.comments %>
 </div>

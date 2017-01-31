@@ -9,24 +9,28 @@
 </head>
 <body>
   <div class="container">
-    <ul class="navbar nav nav-tabs">
-      <li><%= link_to image_tag("logo.png"), root_path %></li>
-      <li><%= link_to "Topics", topics_path %></li>
-      <li><%= link_to "About", about_path %></li>
-        <div class="pull-right user-info">
-          <% if current_user %>
-            <%=image_tag current_user.avatar_url(48), class: "gravatar" %>
-              <div class="pull-right">
-                <%= link_to current_user.name, user_path(current_user) %> <br/> <%= link_to "Sign Out", session_path(current_user), method: :delete %>
-              </div>
-            <% else %>
-            <div class="user-session">
-              <%= link_to "Log In", new_session_path, class: 'btn '%>
-              <%= link_to "Sign Up", new_user_path, class: 'btn' %>
-            </div>
-            <% end %>
-        </div>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><%= link_to image_tag("logo.png"), root_path %></li>
+        <li><%= link_to "Topics", topics_path %></li>
+        <li><%= link_to "About", about_path %></li>
       </ul>
+          <div class="user-info">
+            <% if current_user %>
+              <li class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><%=image_tag current_user.avatar_url(48), class: "gravatar" %></li>
+              <ul class="dropdown-menu pull-right">
+               <li><%= link_to current_user.name, user_path(current_user) %></li>
+               <li><%= link_to "Sign Out", session_path(current_user), method: :delete %></li>
+             </ul>
+              <% else %>
+              <div class="user-session">
+                <%= link_to "Log In", new_session_path, class: 'btn '%>
+                <%= link_to "Sign Up", new_user_path, class: 'btn' %>
+              </div>
+              <% end %>
+          </div>
+        </ul>
+      </nav>
     </div>
     <div>
       <% if flash[:notice] %>
@@ -48,5 +52,6 @@
      </div>
     <%= yield %>
 
+    <%= render 'layouts/footer' %>
 </body>
 </html>

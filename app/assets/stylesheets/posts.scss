@@ -4,23 +4,22 @@
 .posts-top {
   background-color: white;
   padding: 10px;
-  box-shadow: 0 0 5px;
+  border-bottom: 1px solid rgba(1,1,1,.2);
 
     h1 {
       color: rgba(1,1,1,.6);
       font-weight: 200;
     }
 
-    small {
-      padding-left: 40px;
+    p {
+      color: rgba(1,1,1,.6);
     }
 }
 
 .comments-section {
   background-color: white;
   padding: 10px;
-  box-shadow: 0 0 5px;
-  margin-top: 15px;
+  border-bottom: 1px solid rgba(1,1,1,.2);
 
     h3 {
       font-size: 26px;
@@ -32,7 +31,6 @@
 .posts-favorite {
   padding: 10px;
   background-color: white;
-  box-shadow: 0 0 5px;
   margin-top: 15px;
   margin-bottom: 50px;
 }
@@ -55,10 +53,4 @@
 
 .submit-comment {
   margin-top: -46px;
-}
-
-.guidelines {
-  background-color: #ffe349;;
-  margin-top: 35px;
-  padding: 50px;
 }
