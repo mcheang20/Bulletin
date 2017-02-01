@@ -6,6 +6,11 @@ class TopicsController < ApplicationController
 
   def index
     @topics = Topic.all
+    if params[:search]
+       @topics = Topic.search(params[:search]).order("created_at DESC")
+     else
+       @topics = Topic.all.order('created_at DESC')
+     end
   end
 
   def show

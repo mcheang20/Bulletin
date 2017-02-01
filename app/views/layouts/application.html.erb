@@ -15,6 +15,17 @@
         <li><%= link_to "Topics", topics_path %></li>
         <li><%= link_to "About", about_path %></li>
       </ul>
+      <div class="search-bar">
+        <%= form_tag(topics_path, :method => "get", id: "search-form") do %>
+          <%= text_field_tag :search, params[:search], placeholder: "Search" %>
+          <%= submit_tag "Search", :name => nil, class: 'btn btn-default' %>
+        <% end %>
+        <% if @topics.present? %>
+          <%= render 'topics/all' %>
+        <% else %>
+          <p>There are no topics containing the term(s) <%= params[:search] %>.</p>
+        <% end %>
+      </div>
           <div class="user-info">
             <% if current_user %>
               <li class="dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><%=image_tag current_user.avatar_url(48), class: "gravatar" %></li>

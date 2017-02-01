@@ -5,4 +5,8 @@ class Topic < ActiveRecord::Base
     has_many :labels, through: :labelings
 
     scope :visible_to, -> (user) { user ? all : where(public: true) }
+
+    def self.search(search)
+        where("name LIKE ? OR description LIKE ?", "%#{search}%", "%#{search}%")
+    end
 end
