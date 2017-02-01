@@ -7,6 +7,6 @@ class Topic < ActiveRecord::Base
     scope :visible_to, -> (user) { user ? all : where(public: true) }
 
     def self.search(search)
-        where("name LIKE ? OR description LIKE ?", "%#{search}%", "%#{search}%")
+        where("name ILIKE ? OR description ILIKE ?", "%#{search}%", "%#{search}%")
     end
 end

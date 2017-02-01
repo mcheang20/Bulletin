@@ -20,11 +20,6 @@
           <%= text_field_tag :search, params[:search], placeholder: "Search" %>
           <%= submit_tag "Search", :name => nil, class: 'btn btn-default' %>
         <% end %>
-        <% if @topics.present? %>
-          <%= render 'topics/all' %>
-        <% else %>
-          <p>There are no topics containing the term(s) <%= params[:search] %>.</p>
-        <% end %>
       </div>
           <div class="user-info">
             <% if current_user %>
