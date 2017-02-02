@@ -4,6 +4,6 @@ module TopicsHelper
   end
 
   def topic_authorized?
-      current_user && (current_user == @topic.user || current_user.admin?)
+    current_user == @topic.user || current_user.admin?
   end
 end

@@ -8,7 +8,6 @@ class Topic < ActiveRecord::Base
 
     validates :name, presence: true
     validates :description, length: { minimum: 20 }, presence: true
-    validates :user, presence: true
 
     def self.search(search)
         where("name ILIKE ? OR description ILIKE ?", "%#{search}%", "%#{search}%")
