@@ -6,6 +6,7 @@
         <div class="media-body">
           <h4 class="media-heading">
             <%= link_to topic.name, topic %>
+            <small> submitted <%= time_ago_in_words(topic.created_at) %> ago </small>
           </h4>
           <small>
             <%= topic.description.truncate_words(15) %>

@@ -40,3 +40,5 @@ source 'https://rubygems.org'
  gem 'figaro', '1.0'
 
  gem "animate-rails"
+
+gem 'font-awesome-sass'

@@ -18,7 +18,7 @@
       <p><%= @post.body %></p>
  </div>
  <div class="comments-section">
-    <h3>Comments</h3>
+    <h3><i class="fa fa-comments-o" aria-hidden="true"></i> Comments <small>(<%= pluralize(@post.comments.count, 'comment') %>)</small></h3>
       <div class="js-comments">
         <%= render @post.comments %>
       </div>

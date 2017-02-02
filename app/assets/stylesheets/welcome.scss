@@ -73,3 +73,44 @@
       color: grey;
     }
 }
+
+.learn-img {
+  position: absolute;
+  z-index: -100;
+  top: 0;
+}
+
+.learn-content {
+  background-color: white;
+  width: 55%;
+  padding: 20px;
+  margin-left: 10%;
+  box-shadow: 0 0 5px;
+
+    h1 {
+      font-weight: 400;
+    }
+
+    h2 {
+      font-weight: 300;
+      margin-left: 20px;
+    }
+
+    p {
+      margin-left: 55px;
+      text-align: left;
+    }
+}
+
+.about-page {
+
+    h1 {
+      font-size: 50px;
+      color: white;
+    }
+
+    p {
+      font-size: 18px;
+      color: white;
+    }
+}
