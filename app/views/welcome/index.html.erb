@@ -1,11 +1,11 @@
-<div class="container">
-  <div class="home-img">
-    <img src="http://www.asthait.com/wp-content/uploads/2014/02/main-bg-new1.jpg">
+<% provide(:nav_style, "transparent-nav") %>
+<div class="home-img">
+    <%= image_tag("home_img.jpg") %>
     <h1>Discuss anything and everything</h1>
     <h5>Bulletin is a resource for discussing topics and sharing links with the community or your friends</h5>
     <p><%= link_to "Learn More", learn_more_path, class: "btn btn-primary"%></p>
   </div>
-  <section class="col-info">
+  <section class="container col-info">
     <div class="col-sm-4">
       <%= image_tag("image1.png") %>
       <h3>Discuss</h3>

@@ -5,27 +5,24 @@
   background-color: white;
   padding: 10px;
   border-bottom: 1px solid rgba(1,1,1,.2);
-
-    h1 {
-      color: rgba(1,1,1,.6);
-      font-weight: 200;
-    }
-
-    p {
-      color: rgba(1,1,1,.6);
-    }
+  h1 {
+    color: rgba(1,1,1,.6);
+    font-weight: 200;
+  }
+  p {
+    color: rgba(1,1,1,.6);
+  }
 }
 
 .comments-section {
   background-color: white;
   padding: 10px;
   border-bottom: 1px solid rgba(1,1,1,.2);
-
-    h3 {
-      font-size: 26px;
-      color: rgba(1,1,1,.6);
-      font-weight: 200;
-    }
+  h3 {
+    font-size: 26px;
+    color: rgba(1,1,1,.6);
+    font-weight: 200;
+  }
 }
 
 .posts-favorite {
@@ -42,9 +39,7 @@
 }
 
 .posts-form {
-
   margin-top: 10px;
-
   label {
     font-size: 24px;
     font-weight: 500;

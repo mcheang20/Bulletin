@@ -2,23 +2,22 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .home-data {
-    h2 {
-      font-weight: 200;
-      font-size: 36px;
-      position: absolute;
-      z-index: 100;
-      margin-top: 75px;
-      margin-left: 45px;
-    }
-
-    p {
-      font-size: 19px;
-      position: absolute;
-      z-index: 100;
-      margin-top: 115px;
-      width: 200px;
-      margin-left: 25px;
-    }
+  h2 {
+    font-weight: 200;
+    font-size: 36px;
+    position: absolute;
+    z-index: 100;
+    margin-top: 75px;
+    margin-left: 45px;
+  }
+  p {
+    font-size: 19px;
+    position: absolute;
+    z-index: 100;
+    margin-top: 115px;
+    width: 200px;
+    margin-left: 25px;
+  }
 }
 
 .text {
@@ -26,52 +25,48 @@
 }
 
 .home-img {
-
+  padding-top: 75px;
   img {
    position: absolute;
    z-index: -10;
-   margin-top: -192px;
-   margin-left: -150px;
+   width: 100%;
+   margin: 0 auto;
+   top: 0;
   }
-
   h1 {
     padding-top: 150px;
     color: white;
     text-align: center;
-    font-size: 55px;
+    font-size: 3.5rem;
   }
-
   h5 {
     color: white;
     text-align: center;
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: 400;
   }
-
   p {
     text-align: center;
-      a {
-        font-size: 18px;
-        width: 180px;
-      }
+    a {
+      font-size: 1.1rem;
+      width: 200px;
+    }
   }
 }
 
 .col-info {
   text-align: center;
-  margin-top: 300px;
-
-    h3 {
-      font-size: 30px;
-      font-weight: 300;
-      color: rgba(1,1,1,.7);
-    }
-
-    p {
-      font-size: 18px;
-      font-weight: 200;
-      color: grey;
-    }
+  padding-top: 600px;
+  h3 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    color: rgba(1,1,1,.7);
+  }
+  p {
+    font-size: 1rem;
+    font-weight: 200;
+    color: grey;
+  }
 }
 
 .learn-img {
@@ -86,31 +81,26 @@
   padding: 20px;
   margin-left: 10%;
   box-shadow: 0 0 5px;
-
-    h1 {
-      font-weight: 400;
-    }
-
-    h2 {
-      font-weight: 300;
-      margin-left: 20px;
-    }
-
-    p {
-      margin-left: 55px;
-      text-align: left;
-    }
+  h1 {
+    font-weight: 400;
+  }
+  h2 {
+    font-weight: 300;
+    margin-left: 20px;
+  }
+  p {
+    margin-left: 55px;
+    text-align: left;
+  }
 }
 
 .about-page {
-
-    h1 {
-      font-size: 50px;
-      color: white;
-    }
-
-    p {
-      font-size: 18px;
-      color: white;
-    }
+  h1 {
+    font-size: 50px;
+    color: white;
+  }
+  p {
+    font-size: 18px;
+    color: white;
+  }
 }

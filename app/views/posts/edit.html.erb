@@ -1,11 +1,11 @@
 <h1 class="title-all">Edit Post</h1>
 
- <div class="container">
-   <div class="col-md-4">
-     <h4>Guidelines for posts:</h4>
-     <%= render 'layouts/guidelines' %>
-    </div>
-   <div class="col-md-8">
-      <%= render partial: 'form', locals: { topic: @post.topic, post: @post } %>
-   </div>
- </div>
+<div class="container">
+  <div class="col-md-4">
+    <h4>Guidelines for posts:</h4>
+    <%= render 'layouts/guidelines' %>
+  </div>
+  <div class="col-md-8">
+    <%= render partial: 'form', locals: { topic: @post.topic, post: @post } %>
+  </div>
+</div>
