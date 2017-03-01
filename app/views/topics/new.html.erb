@@ -4,7 +4,7 @@
   <div class="col-md-4">
     <h4>Guidelines for topics:</h4>
     <%= render 'layouts/guidelines' %>
-   </div>
+  </div>
   <div class="col-md-8">
     <%= form_for @topic do |f| %>
       <div class="form-group">
@@ -26,7 +26,7 @@
           <%= f.check_box :public %> Public topic
         <% end %>
      </div>
-     
+
       <%= f.submit "Save", class: 'btn btn-success' %>
     <% end %>
   </div>

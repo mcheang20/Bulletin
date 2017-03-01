@@ -26,13 +26,11 @@
 
 .home-img {
   padding-top: 75px;
-  img {
-   position: absolute;
-   z-index: -10;
-   width: 100%;
-   margin: 0 auto;
-   top: 0;
-  }
+  background-image: url("/assets/home_img.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  padding: 40px;
   h1 {
     padding-top: 150px;
     color: white;
@@ -54,9 +52,22 @@
   }
 }
 
+@media screen and (max-width: 500px) {
+  .home-img {
+    h1 {
+      padding-top: 0;
+      font-size: 2.5em;
+    }
+    h5 {
+      font-size: 1.3em;
+      text-shadow: 0 0 5px rgba(1,1,1,.2);
+    }
+  }
+}
+
 .col-info {
   text-align: center;
-  padding-top: 600px;
+  padding-top: 40px;
   h3 {
     font-size: 1.8rem;
     font-weight: 300;
@@ -91,6 +102,12 @@
   p {
     margin-left: 55px;
     text-align: left;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .learn-content{
+    width: 80%;
   }
 }
 
