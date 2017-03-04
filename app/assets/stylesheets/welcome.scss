@@ -26,7 +26,7 @@
 
 .home-img {
   padding-top: 75px;
-  background-image: url("/assets/home_img.jpg");
+  background-image: url("https://static.pexels.com/photos/7109/laptop-notebook-clean-hero.jpg");
   background-size: cover;
   background-position: center center;
   height: 100vh;
@@ -55,7 +55,6 @@
 @media screen and (max-width: 500px) {
   .home-img {
     h1 {
-      padding-top: 0;
       font-size: 2.5em;
     }
     h5 {
