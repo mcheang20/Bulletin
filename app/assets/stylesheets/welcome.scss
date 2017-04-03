@@ -1,6 +1,8 @@
 // Place all the styles related to the welcome controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+//home page
 .home-data {
   h2 {
     font-weight: 200;
@@ -35,18 +37,18 @@
     padding-top: 150px;
     color: white;
     text-align: center;
-    font-size: 3.5rem;
+    font-size: 5em;
   }
   h5 {
     color: white;
     text-align: center;
-    font-size: 1rem;
+    font-size: 1.5em;
     font-weight: 400;
   }
   p {
     text-align: center;
     a {
-      font-size: 1.1rem;
+      font-size: 1.5em;
       width: 200px;
     }
   }
@@ -68,12 +70,12 @@
   text-align: center;
   padding-top: 40px;
   h3 {
-    font-size: 1.8rem;
+    font-size: 2em;
     font-weight: 300;
     color: rgba(1,1,1,.7);
   }
   p {
-    font-size: 1rem;
+    font-size: 1.1em;
     font-weight: 200;
     color: grey;
   }
@@ -112,11 +114,11 @@
 
 .about-page {
   h1 {
-    font-size: 50px;
+    font-size: 5em;
     color: white;
   }
   p {
-    font-size: 18px;
+    font-size: 1.2em;
     color: white;
   }
 }

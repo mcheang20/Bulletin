@@ -1,10 +1,12 @@
 // Place all the styles related to the Posts controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+$border-color: 1px solid rgba(1,1,1,.2);
+
 .posts-top {
   background-color: white;
   padding: 10px;
-  border-bottom: 1px solid rgba(1,1,1,.2);
+  border-bottom: $border-color;
   h1 {
     color: rgba(1,1,1,.6);
     font-weight: 200;
@@ -17,9 +19,9 @@
 .comments-section {
   background-color: white;
   padding: 10px;
-  border-bottom: 1px solid rgba(1,1,1,.2);
+  border-bottom: $border-color;
   h3 {
-    font-size: 26px;
+    font-size: 2em;
     color: rgba(1,1,1,.6);
     font-weight: 200;
   }
@@ -41,7 +43,7 @@
 .posts-form {
   margin-top: 10px;
   label {
-    font-size: 24px;
+    font-size: 1.8em;
     font-weight: 500;
   }
 }

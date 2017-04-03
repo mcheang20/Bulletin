@@ -1,6 +1,7 @@
 // Place all the styles related to the Topics controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
 .topics-page {
   background-color: red;
 }
@@ -13,11 +14,11 @@
 .topic-desc {
   padding: 10px;
   padding-top: 0;
-  font-size: 16px;
+  font-size: 1.1em;
   margin-top: 10px;
   border-bottom: 1px solid rgba(1,1,1,.2);
   h1{
-    font-size: 26px;
+    font-size: 2em;
     color: rgba(1,1,1,.6);
     font-weight: 200;
   }
@@ -31,7 +32,7 @@
   padding: 10px;
   margin-bottom: 40px;
   h2 {
-    font-size: 36px;
+    font-size: 3em;
     font-weight: 200;
   }
 }
