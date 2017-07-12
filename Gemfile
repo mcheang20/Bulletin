@@ -1,15 +1,13 @@
 source 'https://rubygems.org'
 
  # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
- gem 'rails', '4.2.5'
+gem 'rails', '~> 5.0.3'
 
- # #1
  group :production do
    gem 'pg'
    gem 'rails_12factor'
  end
 
- # #2
  group :development do
    gem 'sqlite3'
  end
@@ -19,7 +17,6 @@ source 'https://rubygems.org'
    gem 'shoulda'
    gem 'factory_girl_rails', '~> 4.0'
  end
-
 
  # Use SCSS for stylesheets
  gem 'sass-rails', '~> 5.0'
@@ -36,6 +33,8 @@ source 'https://rubygems.org'
 
  # Used for encrypting User passwords
  gem 'bcrypt'
+
+ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
  gem 'figaro', '1.0'
 

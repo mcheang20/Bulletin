@@ -2,7 +2,7 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-//home page
+//home page styles
 .home-data {
   h2 {
     font-weight: 200;
@@ -26,6 +26,7 @@
   text-align: center;
 }
 
+//background image and captions
 .home-img {
   padding-top: 75px;
   background-image: url("https://static.pexels.com/photos/7109/laptop-notebook-clean-hero.jpg");
@@ -65,10 +66,13 @@
     }
   }
 }
-
+//column image and text styles
 .col-info {
   text-align: center;
-  padding-top: 40px;
+  padding: 4% 0;
+  img {
+    height: 150px;
+  }
   h3 {
     font-size: 2em;
     font-weight: 300;
@@ -81,10 +85,10 @@
   }
 }
 
+// learn more page
 .learn-img {
-  position: absolute;
-  z-index: -100;
-  top: 0;
+  background-image: url("http://www.startgrowprofit.com/wp-content/uploads/2014/09/sgp-twitter-background-072214.png");
+  background-size: cover;
 }
 
 .learn-content {
@@ -101,24 +105,36 @@
     margin-left: 20px;
   }
   p {
-    margin-left: 55px;
+    padding: 0 10%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .learn-img{
+    text-align: -webkit-center;
+  }
+  .learn-content{
+    width: 75%;
+    margin-left: 0;
     text-align: left;
   }
 }
 
-@media screen and (max-width: 400px) {
-  .learn-content{
-    width: 80%;
-  }
-}
-
+//about page styles
 .about-page {
+  background-image: url("http://mickscarpet.com/wp-content/uploads/2014/09/light-orange-slider-background.jpg");
+  background-size: cover;
+  padding: 5%;
+  height: 500px;
   h1 {
     font-size: 5em;
     color: white;
+    margin: 0;
+    font-weight: 200;
   }
   p {
     font-size: 1.2em;
+    font-weight: 200;
     color: white;
   }
 }

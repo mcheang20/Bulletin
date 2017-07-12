@@ -48,25 +48,24 @@ body {
      margin-top: 7px;
    }
  }
-//navigation
+
+//main navigation
 .navbar {
   background-color: #272727;
   position: relative;
   margin: 0 auto;
-  padding-right: 20px;
   border-radius: 0;
+  padding: 0 4% 1% 4%;
   &.transparent-nav {
     position: absolute;
     width: 100%;
     background-color: rgba(1,1,1,.3);
     margin: 0 auto;
-    padding-right: 20px;
     border-radius: 0;
+    padding: 0 1%;
   }
   ul {
-    float: left;
     list-style: none;
-    padding-top: 10px;
     }
   a {
     font-size: 1rem;
@@ -80,7 +79,9 @@ body {
     }
   }
   img {
-    height: 35px;
+    height: 40px;
+    margin: 2% 0 1% 0;
+    float: left;
   }
 }
 
@@ -88,13 +89,12 @@ body {
     color: white;
     font-weight: 200;
     background-color: tomato;
-    padding: 6px;
+    padding: 1% 0 1% 10%;
     margin-top: 0;
 }
 
 //log in log out buttons
 .user-info{
-  padding-top: 5px;
   .btn {
     border: 2px solid;
     margin-right: 5px;
@@ -143,9 +143,11 @@ body {
 //begin footer
 .footer {
   position: absolute;
+  color: white;
   bottom: 0;
   width: 100%;
   height: 50px;
+  background-color: #1b1b1f;
   border-top: 1px solid rgba(1,1,1,.2);
   padding-top: 10px;
   ul {
@@ -174,15 +176,14 @@ body {
   }
 }
 
+//search bar styles
 .search-bar {
-  position: absolute;
   left: 0;
   right: 0;
   margin-left: auto;
   margin-right: auto;
   width: 390px;
-  margin-top: 10px;
-
+  margin-top: -25px;
   input[type="text"] {
     width: 300px;
     font-weight: 300;
@@ -191,8 +192,8 @@ body {
     border: none;
   }
   .btn {
-    background-color: red;
-    border: 1px solid red;
+    background-color: tomato;
+    border: 1px solid tomato;
     color: white;
   }
   p {
@@ -204,5 +205,37 @@ body {
 @media screen and (max-width: 1250px) {
   .search-bar{
     display: none;
+  }
+}
+
+//mobile menu
+.mobile-nav {
+    display: none;
+}
+
+@media screen and (max-width:630px){
+  .mobile-nav{
+    display: block;
+    float: right;
+    padding: 10px;
+  }
+  .main-nav {
+    display: grid;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    a {
+      padding-right: 0;
+    }
+  }
+  .user-info {
+    padding: 0;
+    margin: 0 auto;
+    a {
+      padding-right: 15px;
+    }
+    .dropdown-menu {
+      right: auto;
+    }
   }
 }

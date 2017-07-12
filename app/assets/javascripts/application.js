@@ -23,3 +23,11 @@ $(document).ready(function(){
     })
   }, 5000);
 });
+
+$(document).ready(function(){
+  if($(window).width() <= 630){
+    $('.mobile-nav').click(function(){
+      $('.main-nav').slideToggle();
+    })
+  }
+});

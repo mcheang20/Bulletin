@@ -1,14 +1,12 @@
 <div class="user-heading">
   <% avatar_url = @user.avatar_url(128) %>
   <% if avatar_url %>
-    <div>
-      <%= image_tag avatar_url %>
-    </div>
+    <%= image_tag avatar_url %>
   <% end %>
   <div class="user-top">
-    <h2><%= @user.name %></h2>
-    <p><%= pluralize(@user.posts.count, 'post') %></p>
-    <p><%= pluralize(@user.comments.count, 'comment') %></p>
+    <h1><%= @user.name %></h1>
+    <h3><%= pluralize(@user.posts.count, 'post') %></h3>
+    <h3><%= pluralize(@user.comments.count, 'comment') %></h3>
   </div>
 </div>
 

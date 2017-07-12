@@ -7,11 +7,11 @@
 }
 
 .user-heading {
-  display: -webkit-box;
-  margin-bottom: 15px;
-  margin-top: -20px;
   background-color: #0ef28f;
   color: white;
+  img{
+    padding: 1%;
+  }
 }
 
 .user-content {
@@ -26,4 +26,13 @@
 
 .user-top {
   padding-left: 10px;
+  display: inline-flex;
+  h1 {
+    padding-right: 20px;
+    margin: 0;
+  }
+  h3 {
+    padding-right: 20px;
+    margin: 0;
+  }
 }
